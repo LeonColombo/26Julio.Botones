@@ -16,6 +16,9 @@ public class ListenerBotonConfirmar implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        Intent = new Intent()
+
+
+        Intent abrir = new Intent(this.context, MainPrueba.class);
+        context.startActivity(abrir);
     }
 }
