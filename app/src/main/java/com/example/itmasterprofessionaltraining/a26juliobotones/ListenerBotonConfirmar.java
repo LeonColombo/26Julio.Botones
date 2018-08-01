@@ -18,7 +18,14 @@ public class ListenerBotonConfirmar implements View.OnClickListener {
     public void onClick(View view) {
 
 
-        Intent abrir = new Intent(this.context, MainPrueba.class);
+        Intent abrir = new Intent(this.context, MainConfirmar.class);
+        abrir.putExtra("NOMBRE", this.context.getEditText1().getText().toString());
+        abrir.putExtra("APELLIDO", this.context.getEditText2().getText().toString());
+        abrir.putExtra("EMAIL", this.context.getEditText3().getText().toString());
+
         context.startActivity(abrir);
+
+
+
     }
 }
